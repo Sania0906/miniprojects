@@ -1,0 +1,24 @@
+import csv
+from tkinter import *
+
+def save_transaction():
+    with open('expenses.csv', 'a', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow([desc.get(), amount.get()])
+        desc.delete(0, END)
+        amount.delete(0, END)
+
+root = Tk()
+root.title("Finance Tracker")
+
+Label(root, text="Description").pack()
+desc = Entry(root)
+desc.pack()
+
+Label(root, text="Amount").pack()
+amount = Entry(root)
+amount.pack()
+
+Button(root, text="Add Transaction", command=save_transaction).pack()
+
+root.mainloop()
