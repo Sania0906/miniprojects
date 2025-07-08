@@ -1,0 +1,26 @@
+from tkinter import *
+
+def calculate_grade():
+    marks = int(entry.get())
+    if marks >= 90:
+        grade = "A"
+    elif marks >= 80:
+        grade = "B"
+    elif marks >= 70:
+        grade = "C"
+    else:
+        grade = "Fail"
+    result.config(text=f"Grade: {grade}")
+
+win = Tk()
+win.title("Student Grading System")
+
+Label(win, text="Enter Marks:").pack()
+entry = Entry(win)
+entry.pack()
+
+Button(win, text="Get Grade", command=calculate_grade).pack()
+result = Label(win, text="")
+result.pack()
+
+win.mainloop()
