@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+
+habits = {"Exercise": 5, "Study": 3, "Sleep": 7}
+
+plt.bar(habits.keys(), habits.values(), color='skyblue')
+plt.title("Habit Tracker")
+plt.xlabel("Habits")
+plt.ylabel("Days this week")
+plt.show()
