@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internship Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <!-- Sticky Banner -->
+  <div class="banner">📢 Apply for Internship</div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <nav>
+      <ul>
+        <li><a href="#">Internship Application</a></li>
+        <li><a href="#">Offer Letter Generation</a></li>
+        <li><a href="#">Certificate Verification</a></li>
+        <li><a href="#">Team Join Form</a></li>
+        <li><a href="#">Contact Info</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Welcome to Internship Portal</h1>
+    <p>Scroll to see sticky banner. Resize screen to see responsive sidebar behavior.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
