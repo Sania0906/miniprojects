@@ -1,0 +1,18 @@
+import speech_recognition as sr
+import pyttsx3
+
+engine = pyttsx3.init()
+listener = sr.Recognizer()
+
+def talk(text):
+    engine.say(text)
+    engine.runAndWait()
+
+try:
+    with sr.Microphone() as source:
+        talk("Listening...")
+        voice = listener.listen(source)
+        command = listener.recognize_google(voice)
+        talk(f"You said: {command}")
+except Exception as e:
+    print("Error:", e)
